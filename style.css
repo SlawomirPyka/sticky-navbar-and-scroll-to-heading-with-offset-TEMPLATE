@@ -21,24 +21,20 @@ a {
 
 a.nav-link:link,
 a.nav-link:visited {
-  border-bottom: 5px solid #ad103c;
-  border-top: 5px solid #ad103c;
+  background-color: #ad103c;
   color: #fff;
 }
 a.nav-link:focus {
+  background-color: #ad103c;
   color: #fff;
 }
 a.nav-link:hover {
-  border-bottom: 5px solid #fff;
-  border-top: 5px solid #ad103c;
+  background-color: #6b001e;
 
   transition: 0.2s ease-in-out;
   color: #fff;
 }
 a.nav-link:active {
-  border-bottom: 5px solid #fff;
-  border-top: 5px solid #ad103c;
-
   color: #fff;
 }
 
@@ -137,7 +133,7 @@ body {
   display: flex;
   max-width: 1200px;
   margin: 0rem auto;
-  padding: 0.5rem 0;
+  padding: 0;
   justify-content: space-between;
   align-items: center;
 }
@@ -154,6 +150,7 @@ body {
   display: inline-block;
   text-decoration: none;
   margin: 0 1rem;
+  padding: 1rem;
   color: #fff;
   font-size: 1rem;
 }
