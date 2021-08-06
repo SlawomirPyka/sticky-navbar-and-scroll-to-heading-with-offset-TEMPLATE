@@ -1,17 +1,84 @@
 html {
   font-size: 16px;
   font-family: Lato, sans-serif;
+  color: #454545;
+  scroll-behavior: smooth;
 }
 
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.header {
+a {
+  text-decoration: none;
+  display: inline-block;
   padding: 0.5rem;
-  color: #444;
+}
+
+a.nav-link:link,
+a.nav-link:visited {
+  border-bottom: 5px solid #ad103c;
+  border-top: 5px solid #ad103c;
+  color: #fff;
+}
+a.nav-link:focus {
+  color: #fff;
+}
+a.nav-link:hover {
+  border-bottom: 5px solid #fff;
+  border-top: 5px solid #ad103c;
+
+  transition: 0.2s ease-in-out;
+  color: #fff;
+}
+a.nav-link:active {
+  border-bottom: 5px solid #fff;
+  border-top: 5px solid #ad103c;
+
+  color: #fff;
+}
+
+.btn-a {
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 1rem;
+  color: #fff;
+  background-color: #ad103c;
+  text-decoration: none;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.header {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.header-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  background: #fff;
+}
+
+.logo {
+  margin: 0 1.5rem;
+}
+
+.logo > i {
+  font-size: 2rem;
 }
 
 .logo-container {
@@ -22,9 +89,65 @@ html {
 .title-container {
   display: flex;
   flex-direction: column;
-  margin: 0 0.5rem;
 }
 
 .logo-title {
-  font-size: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.navigation {
+  max-width: 100vw;
+  background-color: #ad103c;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.navigation__container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0rem auto;
+  padding: 0.5rem 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 1rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.hamburger {
+  display: none;
+  justify-self: flex-start;
+  align-self: flex-start;
+  margin: 0 0 0 auto;
+  color: #fff;
+  border-bottom: 5px solid #ad103c;
+  border-top: 5px solid #ad103c;
+  padding: 0.5rem;
+}
+
+.nav-btn {
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: #ad103c;
+  border: none;
+  outline: none;
 }
