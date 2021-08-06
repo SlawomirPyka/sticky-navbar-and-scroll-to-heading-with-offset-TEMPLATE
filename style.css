@@ -195,6 +195,10 @@ body {
   scroll-margin-top: 2.5rem;
 }
 
+.contact {
+  padding: 0.5rem;
+}
+
 .phone-numbers {
   display: flex;
   flex-direction: column;
